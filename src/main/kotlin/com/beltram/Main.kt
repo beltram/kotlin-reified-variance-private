@@ -7,6 +7,9 @@ class User<out T>() {
     // with Type checking has run into a recursive problem. Easiest workaround: specify types of your declarations explicitly
     private val myName = myName()
 
+    // this works
+    private val myOtherName = myName()
+
 //    this works
 //    protected val myName = myName()
 //
@@ -30,5 +33,3 @@ class Person<T>() {
 //    this works
 //    public val myName = myName()
 }
-
-

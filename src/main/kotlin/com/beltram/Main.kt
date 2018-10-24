@@ -14,7 +14,7 @@ class User<out T>() {
     private val myName = myName()
 
     // this works with explicit type
-    private val myName: String = myName().invoke()
+    private val myName: String = myName()
 
     // this works
     private val myOtherName = myName()
